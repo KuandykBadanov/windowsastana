@@ -1,0 +1,2 @@
+# windowsastana
+service os windows
