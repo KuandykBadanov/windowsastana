@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="установка Windows Астана, переустановка Виндовс, Виндоус, виндовс, программист, обслуживание компьютеров и ноутбуков Астана, сброс пароля, восстановление данных, активация Windows, активация Microsoft Office, Word, Excel, Power Point">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         .services-grid {
@@ -17,78 +18,165 @@
             max-width: 200px; /* Увеличьте максимальную ширину */
             height: auto;
         }
+
+        .navbar-custom {
+            background-color: #343a40; /* Темный цвет для контраста */
+        }
+
+        .navbar-custom .nav-link {
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+            background-color: rgba(0, 123, 255, 0.5); /* Прозрачный синий фон */
+        }
+
+        .navbar-custom .nav-link:hover {
+            background-color: rgba(0, 123, 255, 0.7); /* Менее прозрачный синий фон при наведении */
+            color: #fff;
+        }
+
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .about-section h2 {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        .about-section p {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .about-section ul li {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .header-title {
+            padding-top: 150px; /* Уменьшен отступ сверху */
+            padding-bottom: 100px; /* Добавлен отступ снизу */
+            margin-top: 56px; /* Добавлен отступ для компенсации высоты navbar */
+        }
     </style>
     <title>Установка и обслуживание ОС Windows</title>
 </head>
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Windows Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light text-dark text-center py-5 header-title">
         <h1>Установка и обслуживание ОС Windows</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-
-    <section id="services">
-        <div class="service-heading">
-            <h2>Наши Услуги</h2>
-            <p>Мы предоставляем профессиональные услуги по установке, обслуживанию и настройке операционных систем Windows. Наши услуги включают:</p>
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="service-heading text-center">
+                <h2>Наши Услуги</h2>
+                <p>Мы предоставляем профессиональные услуги по установке, обслуживанию и настройке операционных систем Windows. Наши услуги включают:</p>
+            </div>
+            <div class="services-grid row">
+                <div class="service-item col-md-3">
+                    <img src="img/win10.png" alt="Windows 10" class="img-fluid">
+                    <p>Установка Windows 10</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/win11.jpg" alt="Windows 11" class="img-fluid">
+                    <p>Установка Windows 11</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/win7.jpg" alt="Windows 7" class="img-fluid">
+                    <p>Установка Windows 7</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/win81.jpg" alt="Windows 8.1" class="img-fluid">
+                    <p>Установка Windows 8.1</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/office.jpg" alt="Microsoft Office" class="img-fluid">
+                    <p>Установка Microsoft Office Word, Excel</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/kaspersky.jpg" alt="Антивирус Kaspersky" class="img-fluid">
+                    <p>Установка антивируса Kaspersky</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/photoshop.png" alt="Adobe Photoshop" class="img-fluid">
+                    <p>Установка Adobe Photoshop</p>
+                </div>
+                <div class="service-item col-md-3">
+                    <img src="img/corel.png" alt="Corel Draw" class="img-fluid">
+                    <p>Установка Corel Draw</p>
+                </div>
+            </div>
         </div>
-        <div class="services-grid">
-            <div class="service-item">
-                <img src="img/win10.png" alt="Windows 10">
-                <p>Установка Windows 10</p>
-            </div>
-            <div class="service-item">
-                <img src="img/win11.jpg" alt="Windows 11">
-                <p>Установка Windows 11</p>
-            </div>
-            <div class="service-item">
-                <img src="img/win7.jpg" alt="Windows 7">
-                <p>Установка Windows 7</p>
-            </div>
-            <div class="service-item">
-                <img src="img/win81.jpg" alt="Windows 8.1">
-                <p>Установка Windows 8.1</p>
-            </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы специализируемся на обслуживании операционных систем Windows и предоставляем широкий спектр услуг для вашего удобства. Мы имеем богатый опыт и готовы помочь вам в установке, настройке и обслуживании Windows.</p>
+            <p>Наши услуги по обслуживанию включают в себя:</p>
+            <ul>
+                <li>Диагностику и устранение неполадок</li>
+                <li>Восстановление операционных систем и данных</li>
+                <li>Сброс пароля Windows</li>
+                <li>Установку и настройку программного обеспечения</li>
+                <li>Обновление и оптимизацию операционных систем</li>
+                <li>Замену жестких дисков на SSD для повышения производительности</li>
+                <li>Подключение и настройку принтеров и многофункциональных устройств (МФУ)</li>
+                <li>Установку и настройку программ Microsoft Office, антивирусов, Adobe Photoshop, Corel Draw и AutoCAD</li>
+            </ul>
         </div>
     </section>
- 
-    <section id="about">
-        <h2>О нас</h2>
-        <p>Мы специализируемся на обслуживании операционных систем Windows и предоставляет широкий спектр услуг для вашего удобства. Мы имеем богатый опыт и готовы помочь вам в установке, настройке и обслуживании Windows.</p>
-        <p>Наши услуги по обслуживанию включают в себя:</p>
-        <ul>
-            <li>Диагностику и устранение неполадок</li>
-            <li>Восстановление операционных систем и данных</li>
-            <li>Сброс пароля Windows</li>
-            <li>Установку и настройку программного обеспечения</li>
-            <li>Обновление и оптимизацию операционных систем</li>
-            <li>Замену жестких дисков на SSD для повышения производительности</li>
-            <li>Подключение и настройку принтеров и многофункциональных устройств (МФУ)</li>
-            <li>Установку и настройку программ Microsoft Office, антивирусов, Adobe Photoshop, Corel Draw и AutoCAD</li>
-        </ul>
-    </section>
-    
 
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Свяжитесь с нами для получения дополнительной информации и заказа услуг:</p>
-        <address>
-            Адрес: Республика Казахстан, г. Астана<br>
-            Телефон: 87053973253<br>
-            WhatsApp: <a href="https://wa.me/77053973253" class="whatsapp-link">Напишите в WhatsApp</a>
-        </address>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для получения дополнительной информации и заказа услуг:</p>
+            <address>
+                <p>Адрес: Республика Казахстан, г. Астана</p>
+                <p>Телефон: 87053973253</p>
+                <p>WhatsApp: <a href="https://wa.me/77053973253" class="whatsapp-link">Напишите в WhatsApp</a></p>
+            </address>
+        </div>
     </section>
-    
-    
-    
-    <footer>
-        <p>&copy; 2023 Установка и обслуживание ОС Windows</p>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Установка и обслуживание ОС Windows</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
