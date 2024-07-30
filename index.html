@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="установка Windows Астана, переустановка Виндовс, Виндоус, виндовс, программист, обслуживание компьютеров и ноутбуков Астана, сброс пароля, восстановление данных, активация Windows, активация Microsoft Office, Word, Excel, Power Point">
+    <meta name="description" content="Профессиональные услуги по установке, обслуживанию и настройке операционных систем Windows в Астане. Диагностика, восстановление данных, установка программного обеспечения и многое другое.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .services-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* Четыре колонки для каждой услуги */
             gap: 20px;
             text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
         }
 
         .services-grid img {
             max-width: 200px; /* Увеличьте максимальную ширину */
             height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .services-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @media (max-width: 768px) {
@@ -26,21 +47,22 @@
         }
 
         .navbar-custom {
-            background-color: #343a40; /* Темный цвет для контраста */
+            background-color: #0056b3; /* Темно-синий цвет */
         }
 
         .navbar-custom .nav-link {
             color: #fff;
-            border-radius: 20px;
+            border-radius: 15px; /* Закругленные углы */
             padding: 10px 20px;
             margin: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
             background-color: rgba(0, 123, 255, 0.5); /* Прозрачный синий фон */
         }
 
         .navbar-custom .nav-link:hover {
             background-color: rgba(0, 123, 255, 0.7); /* Менее прозрачный синий фон при наведении */
             color: #fff;
+            transform: scale(1.1);
         }
 
         .about-section {
@@ -51,12 +73,16 @@
         .about-section h2 {
             color: #343a40;
             margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
         }
 
-        .about-section p {
+        .about-section p, .about-section ul {
             color: #6c757d;
             line-height: 1.6;
             margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
         }
 
         .about-section ul {
@@ -67,12 +93,25 @@
         .about-section ul li {
             color: #495057;
             margin-bottom: 10px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .header-title {
             padding-top: 150px; /* Уменьшен отступ сверху */
             padding-bottom: 100px; /* Добавлен отступ снизу */
             margin-top: 56px; /* Добавлен отступ для компенсации высоты navbar */
+            opacity: 0;
+            animation: fadeIn 1s forwards 1.5s;
         }
     </style>
     <title>Установка и обслуживание ОС Windows</title>
@@ -94,6 +133,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/77053973253">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -172,13 +216,14 @@
             <address>
                 <p>Адрес: Республика Казахстан, г. Астана</p>
                 <p>Телефон: 87053973253</p>
-                <p>WhatsApp: <a href="https://wa.me/77053973253" class="whatsapp-link">Напишите в WhatsApp</a></p>
+                <p>WhatsApp: <a href="https://wa.me/77053973253" class="whatsapp-link"><i class="fab fa-whatsapp"></i> Напишите в WhatsApp</a></p>
             </address>
         </div>
     </section>
 
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Установка и обслуживание ОС Windows</p>
+        <p><a href="https://wa.me/77053973253" class="whatsapp-link text-white"><i class="fab fa-whatsapp"></i> Свяжитесь с нами по WhatsApp</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
